@@ -6,8 +6,8 @@ config()
 
 const app = express()
 const pool = new pg.Pool({
-    connectionString: process.env.DATEBASE_URL,
-    //ssl: true 
+    connectionString: process.env.DATABASE_URL,
+    ssl: true 
 })
 app.get('/', (req, res) =>{
     res.send('Hola Mundo')
